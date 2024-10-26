@@ -34,10 +34,43 @@
         <h3>Contact Us</h3>
         <p>Required fields are marked with an asterisk (<span class="required">*</span>).</p>
         <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
-            <label for="my-name">First Name<span class="required">*</span></label>
+            <label for="my-name">First Name (Enter first name)<span class="required">*</span></label>
             <input type="text" name="my-name" id="my-name" required>    
-            <label for="my-name">Last Name<span class="required">*</span></label>
-            <input type="text" name="my-name" id="last-name" required>    
+            <label for="my-name">Last Name (Enter last name)<span class="required">*</span></label>
+            <input type="text" name="my-name" id="last-name" required>  
+        
+            <label for="my-destination">Destination</label>
+            <div id="arrow">
+                <select name="my-destination" id="my-destination">
+                    <option value="">Choose Your Destination</option>
+                    <option value="ba">Barcelona</option>
+                    <option value="gr">Granada</option>
+                    <option value="ib">Ibiza</option>
+                    <option value="ma">Madrid</option>
+                    <option value="maj">Majorca</option>
+                    <option value="se">Seville</option>
+                    <option value="te">Tenerife</option>
+                    <option value="va">Valencia</option>
+            
+                    <option value="">Choose Your Travel Time</option>
+                    <option value="fa">Fall</option>
+                    <option value="wi">Winter</option>
+                    <option value="sp">Spring</option>
+                    <option value="su">Summer</option>
+                    <option value="flx">Flexible</option>
+                </select>
+                </div>
+        
+            <fieldset>
+                <legend>Contact Method (Email, Tex, Phone)</legend>
+                    <input type="radio" name="contact-pref" id="pref-email" checked>
+                    <label for="pref-email">Email Address (Enter Email)</label>
+                    <input type="radio" name="contact-pref" id="pref-text">
+                    <label for="pref-text">Text</label>
+                    <input type="radio" name="contact-pref" id="pref-phone">
+                    <label for="pref-phone">Phone Number (Enter telephone number)</label>   
+            </fieldset>
+        
         </form>
     </section>
 </main>
