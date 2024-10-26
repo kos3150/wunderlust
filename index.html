@@ -29,7 +29,7 @@
         <h2>Majorca</h2>
         <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
         </section>
-     
+    </main>    
     <section id="form">
         <h3>Contact Us</h3>
         <p>Required fields are marked with an asterisk (<span class="required">*</span>).</p>
@@ -51,6 +51,12 @@
                     <option value="se">Seville</option>
                     <option value="te">Tenerife</option>
                     <option value="va">Valencia</option>
+                </select>
+            </div>
+
+            <label for="my-travel-time">Travel Time</label>
+            <div id="bullet">
+                <select name="my-travel-time" id="my-travel-time">
             
                     <option value="">Choose Your Travel Time</option>
                     <option value="fa">Fall</option>
@@ -60,25 +66,24 @@
                     <option value="flx">Flexible</option>
                 </select>
                 </div>
-        
-            <fieldset>
-                <legend>Contact Method (Email, Tex, Phone)</legend>
-                    <input type="radio" name="contact-pref" id="pref-email" checked>
-                    <label for="pref-email">Email Address (Enter Email)</label>
-                    <input type="radio" name="contact-pref" id="pref-text">
-                    <label for="pref-text">Text</label>
-                    <input type="radio" name="contact-pref" id="pref-phone">
-                    <label for="pref-phone">Phone Number (Enter telephone number)</label>   
-            </fieldset>
-        
+        <section id="contact-method">
+            <h3>Contact Method</h3>
+                <fieldset>
+                    <legend>Contact Method (Email, Tex, Phone)</legend>
+                        <input type="radio" name="contact-pref" id="pref-email" checked>
+                        <label for="pref-email">Email Address (Enter Email)<span class="required">*</span></label>
+                        <input type="radio" name="contact-pref" id="pref-text">
+                        <label for="pref-text">Text</label>
+                        <input type="radio" name="contact-pref" id="pref-phone">
+                        <label for="pref-phone">Phone Number (Enter telephone number)<span class="required"></span></label>   
+                </fieldset>
+            </section>
         </form>
-    </section>
-</main>
-<footer>
-    <p>Copyright &copy; 2021 Wanderlust<br>
-    Privacy Statement<br>
-    Terms of Service</p>
-</footer>  
-
-</body>
+            <footer>
+                <p>Copyright &copy; 2021 Wanderlust<br>
+                Privacy Statement<br>
+                Terms of Service</p>
+            </footer>  
+        </section>
+    </body>
 </html>
