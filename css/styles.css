@@ -55,7 +55,6 @@ table {
 	border-spacing: 0;
 }
 
-
     /* -------------------- ROOT VARIABLES ------------------- 
     Save all changes*/
       
@@ -72,31 +71,73 @@ table {
     }
     /* --------- GLOBAL STYLES (mobil first/small ---------- */
     
-
-    
     /* --------- Small-min-width: 320px --------- */
-    @media (min-width: 320px) {
-        body {
-            background-color: var(--light-gray);
+    @media screen and (min-width: 320px) {
+    body {
+        display: grid;
         }
-        .container {
-            max-width: 90%;
-            margin: 0 auto;
-        }
-        .header {
-            background-color: var(--white);
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--light-gray);
-        }
-        .logo {
-            font-family: "molle-regular-italic", serif;
-            font-size: 2rem;
-            font-weight: 400;
-            font-style: italic;
-            color: var(--purple);
-        }
-       
     }
+
+ header {
+    display: grid;
+    grid-template-areas: "logo heading"
+    ". paragraph";
+    gap: 0px 0px;
+    background-color: #55BCD5;
+    padding: 70px;
+    width: 100%;
+    }
+        
+#logo {
+    grid-area: logo;
+    position:absolute;
+    }
+h4{
+    font-size:20px;
+}
+h3{
+    font-size: 25px;
+}
+h2{
+    display: flex;
+    float:left;
+    font-size: 35px;
+    text-align: center;
+}
+h1{
+    grid-area: heading;
+    font-size: 40px;
+    position: absolute;
+    left: 15%;
+}
+.active p{
+    background-color: #F6D64A;
+}
+#intro p{
+    padding: 10px;
+    margin: 25px;
+    float: left;
+    font-size: 25px;
+}
+#img-grid {
+    float: right;
+}
+header p{
+    grid-area: paragraph;
+    position: absolute;
+    left: 15%;
+    bottom: 78%;
+}
+
+
+
+
+
+    h1, h2, h3{
+        font-family: "Molle", sans-serif;
+    }
+
+    h4, p, q, small, nav, button, form {
+        font-family: "Montserrat", sans-serif;
+    }
+    
