@@ -128,7 +128,33 @@ header p{
     left: 15%;
     bottom: 78%;
 }
-
+nav{
+    display: flex;
+    top: 10px;
+    padding: 25px;
+}
+ul{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    grid-area: nav-bar;
+}
+li{
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    line-height: 10px;
+    background-color: #EAEAEA;
+    color: #000000;
+    padding: 15px;
+}
+#intro{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
 
 
 
