@@ -207,20 +207,53 @@ option:nth-child(1){
 .required, .radio-control{
     color: #9B26B0;
 }
+#names{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#nums{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#selects form{
+    display: flex;
+    grid-template-columns: 1fr;
+}
+#contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+input[type="submit"]{
+    background-color: #9B26B0;
+    color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 25px;
+    margin-top: 50px;
+}
 
+h1, h2, h3{
+    font-family: "Molle", sans-serif;
+}
 
-
-
-
-
-
-
-
-    h1, h2, h3{
-        font-family: "Molle", sans-serif;
-    }
-
-    h4, p, q, small, nav, button, form {
-        font-family: "Montserrat", sans-serif;
-    }
+h4, p, q, small, nav, button, form {
+    font-family: "Montserrat", sans-serif;
+}
+footer{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    background-color: #EAEAEA;
+    padding: 25px;
+    align-content: center;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+    color:#000000;
+}
+li a:hover {
+    background-color: #F6D64A;
+}
     
