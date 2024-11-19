@@ -187,6 +187,15 @@ plan div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.sr-only , #skip , #toggle, #menu-toggle label {
+    position: absolute;
+    left:-10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 
 
 
