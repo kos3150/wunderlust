@@ -155,6 +155,42 @@ nav a{
     margin: auto;
     display: flex;
 }
+#plan{
+    margin: auto;
+    background-color: #F6D64A;
+    height: 500px;
+}
+#plan section{
+    background: #55BCD5;
+    border: white solid;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+#plan h3 {
+    margin-left: 8%;
+}
+plan div {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0;
+    align-content: center;
+    align-items: center;
+}
+#testimonials div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15rem;
+}
+#about div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
 
 
 
