@@ -195,6 +195,18 @@ plan div {
     height: 1px;
     overflow: hidden;
 }
+#about{
+    background-color: #499BD2;
+}
+input[type=text] , #nums input, input[type=radio],
+option:nth-child(1){
+    border: 2px solid #9B26B0;
+    border-radius: 4px;
+}
+
+.required, .radio-control{
+    color: #9B26B0;
+}
 
 
 
